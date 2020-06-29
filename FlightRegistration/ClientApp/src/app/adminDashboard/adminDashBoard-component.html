@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+<body>
+  <div>
+    <div class='container'>
+      <div class="row">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="row">
+        <!-- Boxes de Acoes -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="box">
+            <div class="icon">
+              <div class="image"><i class="fa fa-flag"></i></div>
+              <div class="info">
+                <h3 class="title">ADD NEW SLOTS</h3>
+                <p>
+                  INSERT NEW SLOTS FOR APPOINTMENT
+                </p>
+                <div class="more">
+                  <a href="#" [routerLink]="['/AddSlot']" title="Title Link">
+                    Read More <i class="fa fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="box">
+            <div class="icon">
+              <div class="image"><i class="fa fa-flag"></i></div>
+              <div class="info">
+                <h3 class="title">SHOW ALL APPOINTMENTS</h3>
+                <p>
+                  VIEW ALL BOOKING DETAILS
+                </p>
+                <div class="more">
+                  <a href="#" [routerLink]="['/AllBooking']" title="Title Link">
+                    Read More <i class="fa fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="box">
+            <div class="icon">
+              <div class="image"><i class="fa fa-flag"></i></div>
+              <div class="info">
+                <h3 class="title">APPROVE PENDING BOOKINGS</h3>
+                <p>
+                  VIEW ALL PENDING BOOKING DETAILS.
+                </p>
+                <div class="more">
+                  <a href="#" [routerLink]="['/PendingBooking']" title="Title Link">
+                    Read More <i class="fa fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+        <!-- /Boxes de Acoes -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+<body>
+  <nav class='navbar navbar-inverse'>
+    <div class='container-fluid'>
+
+    </div>
+  </nav>
+  <div class="container">
+    <div style="float:left; width: 50%">
+      <div class="panel panel-default">
+        <div class="panel-heading">Add Slots</div>
+        <div class="panel-body">
+          <form #f="ngForm" novalidate (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-md-12">
+                <label for="name">Select Number of Slots</label>
+                <input type="number" class="form-control" name="Capacity" [(ngModel)]="AppointmentModel.Capacity" maxlength="50" required>
+              </div>
+            </div>
+
+            <!--<mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>-->
+
+            <div class="row">
+              <div class="col-md-12">
+                <label for="date-input">Select Date</label>
+                <input required type="date"
+                       class="form-control"
+                       name="date"
+                       maxlength="20"
+                       [(ngModel)]="AppointmentModel.AppointmentDate">
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div style="margin-top:10px;" class="col-md-12">
+                <button type="submit" [disabled]="!f.form.valid" class="btn btn-success">Submit</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class='navbar navbar-inverse'>
+    <div class='container-fluid'>
+
+    </div>
+  </nav>
+</body>
+</html>
